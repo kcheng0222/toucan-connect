@@ -24,28 +24,21 @@ var palette = {
 };
 
 
-var menuChoices = document.getElementsByClassName("darkNeutral");
-var bar = document.getElementsByClassName("mediumHighlight");
-var bar2 = document.querySelectorAll(".displaytbl th");
-
 //console.log("here is bar");
 //console.log(bar);
 // alert(menuChoices);
-for(var i = 0; i < menuChoices.length; i++){
-    //console.log(d[i]);
-    menuChoices[i].style.backgroundColor = palette.headerColor;
-}
+for(menu in document.getElementsByClassName("darkNeutral"))
+    menu.style.backgroundColor = palette.headerColor;
 
-for(i = 0; i < bar.length; i++){
-    bar[i].style.backgroundColor = palette.subHeaderColor;
 
-}
+for(foo in document.getElementsByClassName("mediumHighlight"))
+    foo.style.backgroundColor = palette.subHeaderColor;
+
 //console.log("entering");
 //console.log(bar2[0].style);
-for(i = 0; i < bar2.length; i++){
-    //console.log(bar2[i]);
-    bar2[i].style.backgroundColor = palette.subHeaderColor;
-}
+for(bar in document.querySelectorAll(".displaytbl th"))
+    bar.style.backgroundColor = palette.subHeaderColor;
+
 
 //x.y
 
