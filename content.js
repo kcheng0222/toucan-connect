@@ -11,41 +11,41 @@ for(var i = 0; i < images[i].length; i++){
     console.log(images[i]);
 }
 
+// var link = document.createElement("link");
+// link.href = chrome.extension.getURL("styles.css");
+// link.type = "text/css";
+// link.rel = "stylesheet";
+// document.getElementsByTagName("head")[0].appendChild(link);
 
-var link = document.createElement("link");
-link.href = chrome.extension.getURL("style.css");
-link.type = "text/css";
-link.rel = "stylesheet";
-document.getElementsByTagName("head")[0].appendChild(link);
-*/
+var palette = {
+	headerColor:"#ff0000",
+	subHeaderColor:"#ad6602"
+};
 
-var orange = "#fa8100"
-var color2 = "#fa8100"
 
 var menuChoices = document.getElementsByClassName("darkNeutral");
 var bar = document.getElementsByClassName("mediumHighlight");
 var bar2 = document.querySelectorAll(".displaytbl th");
 
-//console.log("here is d");
-//console.log(d);
-//alert(d);
-for(var i = 0; i < menuChoices.length; i++){
-    //console.log(d[i]);
-    //console.log("editing color");
-    menuChoices[i].style.backgroundColor = orange;
+console.log("here is bar");
+console.log(bar);
+// alert(d);
+for(var i = 0; i < d.length; i++){
+	//console.log(d[i]);
+    d[i].style.backgroundColor = palette.headerColor;
 }
 
 for(i = 0; i < bar.length; i++){
-    bar[i].style.backgroundColor = orange;
+    bar[i].style.backgroundColor = palette.subHeaderColor;
+
 }
 console.log("entering");
 //console.log(bar2[0].style);
 for(i = 0; i < bar2.length; i++){
-    //console.log("bar2 " + bar2[i]);
-    bar2[i].style.backgroundColor = "#F0000F";
+    console.log(bar2[i]);
+    bar2[i].style.backgroundColor = palette.subHeaderColor;
 }
 
-//document.getElementsByClassName("mediumHighlight")[0].style.backgroundColor="#F00000";
+//x.y
 
-//x.y 
 //x["y"]
