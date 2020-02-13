@@ -7,10 +7,11 @@ for (var i = 0, l = images.length; i < l; i++) {
 
 //console.log("here is img");
 //console.log(images);
+/*
 for(var i = 0; i < images[i].length; i++){
     console.log(images[i]);
 }
-
+*/
 // var link = document.createElement("link");
 // link.href = chrome.extension.getURL("styles.css");
 // link.type = "text/css";
@@ -18,8 +19,8 @@ for(var i = 0; i < images[i].length; i++){
 // document.getElementsByTagName("head")[0].appendChild(link);
 
 var palette = {
-	headerColor:"#ff0000",
-	subHeaderColor:"#ad6602"
+    headerColor:"#ff0000",
+    subHeaderColor:"#ad6602"
 };
 
 
@@ -27,22 +28,22 @@ var menuChoices = document.getElementsByClassName("darkNeutral");
 var bar = document.getElementsByClassName("mediumHighlight");
 var bar2 = document.querySelectorAll(".displaytbl th");
 
-console.log("here is bar");
-console.log(bar);
-// alert(d);
-for(var i = 0; i < d.length; i++){
-	//console.log(d[i]);
-    d[i].style.backgroundColor = palette.headerColor;
+//console.log("here is bar");
+//console.log(bar);
+// alert(menuChoices);
+for(var i = 0; i < menuChoices.length; i++){
+    //console.log(d[i]);
+    menuChoices[i].style.backgroundColor = palette.headerColor;
 }
 
 for(i = 0; i < bar.length; i++){
     bar[i].style.backgroundColor = palette.subHeaderColor;
 
 }
-console.log("entering");
+//console.log("entering");
 //console.log(bar2[0].style);
 for(i = 0; i < bar2.length; i++){
-    console.log(bar2[i]);
+    //console.log(bar2[i]);
     bar2[i].style.backgroundColor = palette.subHeaderColor;
 }
 
