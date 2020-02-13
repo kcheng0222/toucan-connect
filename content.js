@@ -4,7 +4,7 @@ for (var i = 0, l = images.length; i < l; i++) {
     images[i].width = 15;
     images[i].height = 15;
 }
-/*
+
 //console.log("here is img");
 //console.log(images);
 for(var i = 0; i < images[i].length; i++){
