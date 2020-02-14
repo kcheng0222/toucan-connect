@@ -21,7 +21,6 @@ var palette = {
 for(menu of document.getElementsByClassName("darkNeutral"))
     menu.style.backgroundColor = palette.headerColor;
 
-
 // 1 second is not enough delay.
 var delayInMilliseconds = 1500;
 
