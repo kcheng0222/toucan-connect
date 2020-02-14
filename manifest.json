@@ -3,7 +3,7 @@
 
   "name": "Toucan Connect",
   "version": "0.1.0",
-  "description": "Bad Colors",
+  "description": "Toucan.",
 
   "content_scripts": [{
     "css": ["styles.css"],

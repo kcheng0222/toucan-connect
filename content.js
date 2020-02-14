@@ -1,7 +1,11 @@
-console.log("Toucan Loaded");
+console.log("Toucan is ready.");
+
 var images = document.getElementsByTagName('img');
+
+var toucanImage = "https://animals.sandiegozoo.org/sites/default/files/2016-11/animals_hero_toucan.jpg"
+
 for (var i = 0, l = images.length; i < l; i++) {
-    images[i].src = 'https://animals.sandiegozoo.org/sites/default/files/2016-11/animals_hero_toucan.jpg';
+    images[i].src = toucanImage;
     images[i].width = 15;
     images[i].height = 15;
 }
@@ -25,10 +29,10 @@ var palette = {
     subHeaderColorLight:"#9ac503"
 };
 
-
 //console.log("here is bar");
 //console.log(bar);
 // alert(menuChoices);
+
 for(menu of document.getElementsByClassName("darkNeutral"))
     menu.style.backgroundColor = palette.headerColor;
 
@@ -45,7 +49,8 @@ for(menu of document.getElementsByClassName("darkNeutral"))
 //   }
 // };
 
-var delayInMilliseconds = 3500;
+// 1 second is not enough delay.
+var delayInMilliseconds = 1500;
 
 setTimeout(function() { // all the elements that must be styled after the page loads
   for(foo of document.getElementsByClassName("mediumHighlight"))
@@ -58,6 +63,4 @@ setTimeout(function() { // all the elements that must be styled after the page l
 }, delayInMilliseconds);
 
 
-//x.y
-
-//x["y"]
+// NOTE: x.y is the same as x["y"]
