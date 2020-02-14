@@ -1,5 +1,7 @@
 console.log("Toucan is ready.");
 
+document.title = "Toucan Portal";
+
 var images = document.getElementsByTagName('img');
 
 var toucanImage = "https://animals.sandiegozoo.org/sites/default/files/2016-11/animals_hero_toucan.jpg"
