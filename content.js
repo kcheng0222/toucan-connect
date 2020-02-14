@@ -1,3 +1,4 @@
+console.log("Toucan Loaded");
 var images = document.getElementsByTagName('img');
 for (var i = 0, l = images.length; i < l; i++) {
     images[i].src = 'https://animals.sandiegozoo.org/sites/default/files/2016-11/animals_hero_toucan.jpg';
@@ -19,25 +20,42 @@ for(var i = 0; i < images[i].length; i++){
 // document.getElementsByTagName("head")[0].appendChild(link);
 
 var palette = {
-    headerColor:"#ff0000",
-    subHeaderColor:"#ad6602"
+    headerColor:"#fe7702",
+    subHeaderColor:"#2b4776",
+    subHeaderColorLight:"#9ac503"
 };
 
 
 //console.log("here is bar");
 //console.log(bar);
 // alert(menuChoices);
-for(menu in document.getElementsByClassName("darkNeutral"))
+for(menu of document.getElementsByClassName("darkNeutral"))
     menu.style.backgroundColor = palette.headerColor;
-
-
-for(foo in document.getElementsByClassName("mediumHighlight"))
-    foo.style.backgroundColor = palette.subHeaderColor;
 
 //console.log("entering");
 //console.log(bar2[0].style);
-for(bar in document.querySelectorAll(".displaytbl th"))
-    bar.style.backgroundColor = palette.subHeaderColor;
+
+// document.onload = function() {
+//   for(foo of document.getElementsByClassName("mediumHighlight"))
+//       foo.style.backgroundColor = palette.subHeaderColor;
+//
+//   for(bar of document.querySelectorAll(".displaytbl th")){
+//       console.log(bar);
+//       bar.style.backgroundColor = palette.subHeaderColor;
+//   }
+// };
+
+var delayInMilliseconds = 3500;
+
+setTimeout(function() { // all the elements that must be styled after the page loads
+  for(foo of document.getElementsByClassName("mediumHighlight"))
+      foo.style.backgroundColor = palette.subHeaderColor;
+
+  for(bar of document.querySelectorAll(".displaytbl th")){
+      console.log(bar);
+      bar.style.backgroundColor = palette.subHeaderColorLight;
+  }
+}, delayInMilliseconds);
 
 
 //x.y
