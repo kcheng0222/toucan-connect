@@ -34,4 +34,14 @@ setTimeout(function() { // all the elements that must be styled after the page l
   }
 }, delayInMilliseconds);
 
+
+//put in anon function to wait for page load
+(function(){
+    var link = document.querySelector("link[real*='icon']") || document.createElement('link')
+    link.type = 'image/x-icon'
+    link.rel = 'shortcut icon'
+    link.href = 'http://icontoucan.com/favicon.ico' //found toucan ico
+    document.getElementsByTagName("head")[0].appendChild(link)
+})()
+
 // NOTE: x.y is the same as x["y"]
