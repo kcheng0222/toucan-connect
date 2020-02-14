@@ -1,15 +1,20 @@
 {
-  "manifest_version": 2,
+    "manifest_version": 2,
+    "name": "Toucan Connect",
+    "version": "0.1.0",
+    "description": "Toucan.",
 
-  "name": "Toucan Connect",
-  "version": "0.1.0",
-  "description": "Bad Colors",
-
-  "content_scripts": [{
-    "css": ["styles.css"],
-    "js": ["content.js"],
-    "matches": ["https://sis.nhusd.k12.ca.us/*"],
-    "run_at": "document_end"
-  }]
-
+    "icons": {
+        "16": "img/toucan_16.png",
+        "32": "img/toucan_32.png",
+        "48": "img/toucan_48.png",
+        "128": "img/toucan_128.png"
+    },
+    
+    "content_scripts": [{
+        "css": ["styles.css"],
+        "js": ["content.js"],
+        "matches": ["https://sis.nhusd.k12.ca.us/*"],
+        "run_at": "document_end"
+    }]
 }
