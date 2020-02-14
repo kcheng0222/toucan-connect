@@ -1,1 +1,1 @@
-# student-connect
+# toucan-connect
