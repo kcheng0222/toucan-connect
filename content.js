@@ -29,7 +29,6 @@ setTimeout(function() { // all the elements that must be styled after the page l
       foo.style.backgroundColor = palette.subHeaderColor;
 
   for(bar of document.querySelectorAll(".displaytbl th")){
-      console.log(bar);
       bar.style.backgroundColor = palette.subHeaderColorLight;
   }
 }, delayInMilliseconds);
@@ -40,7 +39,7 @@ setTimeout(function() { // all the elements that must be styled after the page l
     var link = document.querySelector("link[real*='icon']") || document.createElement('link')
     link.type = 'image/x-icon'
     link.rel = 'shortcut icon'
-    link.href = 'http://icontoucan.com/favicon.ico' //found toucan ico
+    link.href = 'http://icontoucan.com/favicon.ico' // toucan ico
     document.getElementsByTagName("head")[0].appendChild(link)
 })()
 
