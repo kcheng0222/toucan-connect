@@ -16,3 +16,16 @@ body {
   -webkit-filter: invert(100%);
   filter: invert(100%);
 }
+
+.displaytbl th{
+	background-color:#9ac503 !important; /*subHeaderColorLight*/
+}
+
+.mediumHighlight{
+	background-color:#2b4776 !important; /*subHeaderColor*/
+}
+
+.darkNeutral{
+	background-color:#fe7702 !important; /*headerColor*/
+}
+

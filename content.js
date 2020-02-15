@@ -12,34 +12,12 @@ for (var i = 0, l = images.length; i < l; i++) {
     images[i].height = 15;
 }
 
-var palette = {
-    headerColor:"#fe7702",
-    subHeaderColor:"#2b4776",
-    subHeaderColorLight:"#9ac503"
-};
-
-for(menu of document.getElementsByClassName("darkNeutral"))
-    menu.style.backgroundColor = palette.headerColor;
-
-// 1 second is not enough delay.
-var delayInMilliseconds = 1500;
-
-setTimeout(function() { // all the elements that must be styled after the page loads
-  for(foo of document.getElementsByClassName("mediumHighlight"))
-      foo.style.backgroundColor = palette.subHeaderColor;
-
-  for(bar of document.querySelectorAll(".displaytbl th")){
-      bar.style.backgroundColor = palette.subHeaderColorLight;
-  }
-}, delayInMilliseconds);
-
-
-//put in anon function to wait for page load
 (function(){
     var link = document.querySelector("link[real*='icon']") || document.createElement('link')
     link.type = 'image/x-icon'
     link.rel = 'shortcut icon'
-    link.href = 'http://icontoucan.com/favicon.ico' // toucan ico
+    link.href = 'http://icontoucan.com/favicon.ico' //Has to be .ico type
+
     document.getElementsByTagName("head")[0].appendChild(link)
 })()
 
