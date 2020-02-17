@@ -16,7 +16,7 @@ for (var i = 0, l = images.length; i < l; i++) {
     var link = document.querySelector("link[real*='icon']") || document.createElement('link')
     link.type = 'image/x-icon'
     link.rel = 'shortcut icon'
-    link.href = 'http://icontoucan.com/favicon.ico' //Has to be .ico type
+    link.href = 'https://www.iconfinder.com/icons/64897/download/ico/32' //Has to be .ico type
 
     document.getElementsByTagName("head")[0].appendChild(link)
 })()
