@@ -29,3 +29,28 @@ body {
 	background-color:#fe7702 !important; /*headerColor*/
 }
 
+.mediumNeutral{
+  background-color: #827e73 !important;
+}
+
+.lightNeutral{
+  background-color: #b9b6a7 !important;
+}
+
+.bannertbl th{
+	background-color:#5c0100 !important; /*topBar*/
+  color: #fff !important;
+}
+
+.altRow td {
+	background-color:rgba(256, 100, 100, 0.1) !important;
+}
+
+body {
+  background-image: url("https://images.pexels.com/photos/1123767/pexels-photo-1123767.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") !important;
+  background-size: cover !important;
+}
+
+#main {
+  background-color: rgba(255, 255, 255, 0.8);
+}
